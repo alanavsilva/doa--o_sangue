@@ -9,12 +9,35 @@ function validacao() {
     let cidade = document.getElementById("cidade").Value;
     let estado = document.getElementById("estado").Value;
 
-    if (idade < 16) {
-        alert("Deve ter no mínimo 16 anos para doar sangue")
+    if (nome.length === 0) {
+        alert("Informe seu nome")
     }
 
-    if (peso < 50) {
+    if (email.length === 0) {
+        alert("Informe seu email")
+    }
+
+    if (idade.length === 0) {
+        alert("Informe sua idade")
+    } else if (idade < 16) {
+        alert("Deve ter no mínimo 16 anos para doar sangue")
+    }
+    
+    if (peso.length === 0) {
+        alert("Informe seu peso")
+    } else if (peso < 50) {
         alert("Deve ter no mínimo 50kg para doar sangue")
     }
 
+    if (telefone.length === 0) {
+        alert("Informe seu telefone")
+    }
+
+    if (cidade.length === 0) {
+        alert("Informe sua cidade")
+    }
+
+    if (estado.length === 0) {
+        alert("Informe seu estado")
+    }
 }

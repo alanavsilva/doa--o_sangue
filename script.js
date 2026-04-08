@@ -9,9 +9,12 @@ function validacao() {
     let cidade = document.getElementById("cidade").Value;
     let estado = document.getElementById("estado").Value;
 
-    if (idade < 16){
-        alert("Deve ter no mínimo 16 anos para se cadastrar")
+    if (idade < 16) {
+        alert("Deve ter no mínimo 16 anos para doar sangue")
     }
 
-    
+    if (peso < 50) {
+        alert("Deve ter no mínimo 50kg para doar sangue")
+    }
+
 }

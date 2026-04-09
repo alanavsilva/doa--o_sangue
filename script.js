@@ -22,7 +22,7 @@ function validacao() {
     if (email.length === 0) {
         alert("Informe seu email")
         valido = false;
-    } else if (!email.includes("")) {
+    } else if (!email.includes("@") || !email.includes(".") ) {
         alert("Email deve possuir formato válido")
         valido = false;
     }

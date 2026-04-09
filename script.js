@@ -12,7 +12,7 @@ function validacao() {
     let estado = document.getElementById("estado").value;
 
     if (nome.length === 0) {
-        alert("Informe seu nome")
+        alert("Informe seu nome para continuar")
         valido = false;
     } else if (!nome.includes(' ')) {
         alert("Deve conter nome e sobrenome")
@@ -20,7 +20,7 @@ function validacao() {
     }
 
     if (email.length === 0) {
-        alert("Informe seu email")
+        alert("Informe seu email para continuar")
         valido = false;
     } else if (!email.includes("@") || !email.includes(".")) {
         alert("Email deve possuir formato válido")
@@ -28,7 +28,7 @@ function validacao() {
     }
 
     if (idade.length === 0) {
-        alert("Informe sua idade")
+        alert("Informe sua idade para continuar")
         valido = false;
     } else if (idade < 16) {
         alert("Deve ter no mínimo 16 anos para doar sangue")
@@ -36,7 +36,7 @@ function validacao() {
     }
 
     if (peso.length === 0) {
-        alert("Informe seu peso")
+        alert("Informe seu peso para continuar")
         valido = false;
     } else if (peso < 50) {
         alert("Deve ter no mínimo 50kg para doar sangue")
@@ -44,7 +44,7 @@ function validacao() {
     }
 
     if (telefone.length === 0) {
-        alert("Informe seu telefone")
+        alert("Informe seu telefone para continuar")
         valido = false;
     } else if (isNaN(telefone)) {
         alert("Seu telefone deve conter apenas números")
@@ -52,12 +52,17 @@ function validacao() {
     }
 
     if (cidade.length === 0) {
-        alert("Informe sua cidade")
+        alert("Informe sua cidade para continuar")
         valido = false;
     }
 
     if (estado.length === 0) {
-        alert("Informe seu estado")
+        alert("Informe seu estado para continuar")
+        valido = false;
+    }
+
+    if (tipo && tipo.value === "nada") {
+        alert("Selecione seu tipo sanguíneo para continuar")
         valido = false;
     }
 

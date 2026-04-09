@@ -14,7 +14,7 @@ function validacao() {
     if (nome.length === 0) {
         alert("Informe seu nome")
         valido = false;
-    }else if(!nome.includes(' ')){
+    } else if (!nome.includes(' ')) {
         alert("Deve conter nome e sobrenome")
         valido = false;
     }
@@ -22,7 +22,7 @@ function validacao() {
     if (email.length === 0) {
         alert("Informe seu email")
         valido = false;
-    } else if (!email.includes("@") || !email.includes(".") ) {
+    } else if (!email.includes("@") || !email.includes(".")) {
         alert("Email deve possuir formato válido")
         valido = false;
     }
@@ -46,9 +46,9 @@ function validacao() {
     if (telefone.length === 0) {
         alert("Informe seu telefone")
         valido = false;
-    }else if (isNaN(telefone)){
-       alert("Seu telefone deve conter apenas números") 
-       valido = false;
+    } else if (isNaN(telefone)) {
+        alert("Seu telefone deve conter apenas números")
+        valido = false;
     }
 
     if (cidade.length === 0) {
@@ -59,5 +59,18 @@ function validacao() {
     if (estado.length === 0) {
         alert("Informe seu estado")
         valido = false;
+    }
+
+    if (valido) {
+        alert("Cadastro \n" +
+            "Nome: " + nome + "\n" +
+            "Email: " + email + "\n" +
+            "Idade: " + idade + "\n" +
+            "Peso: " + peso + "\n" +
+            "Tipo sanguíneo: " + tipo + "\n" +
+            "Telefone: " + telefone + "\n" +
+            "Cidade: " + cidade + "\n" +
+            "Estado: " + estado 
+        )
     }
 }

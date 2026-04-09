@@ -61,7 +61,7 @@ function validacao() {
         valido = false;
     }
 
-    if (tipo && tipo.value === "nada") {
+    if (tipo === "") {
         alert("Selecione seu tipo sanguíneo para continuar")
         valido = false;
     }
